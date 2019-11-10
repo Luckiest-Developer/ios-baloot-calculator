@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GeezaPro.ttc">
+            <string>GeezaPro</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="fDX-se-dpP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rounded Icon" translatesAutoresizingMaskIntoConstraints="NO" id="gXI-mz-BCg">
+                                <rect key="frame" x="87.666666666666686" y="272" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="T7U-te-chi"/>
+                                    <constraint firstAttribute="width" constant="200" id="Zc6-T6-mSK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="حاسبة بلوت" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLl-WA-9lL">
+                                <rect key="frame" x="98.666666666666686" y="479.66666666666663" width="179" height="59.999999999999886"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4AU-MS-D30"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fDX-se-dpP" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="1Tz-u5-Rbk"/>
+                            <constraint firstAttribute="bottom" secondItem="fDX-se-dpP" secondAttribute="bottom" id="8BB-3x-luX"/>
+                            <constraint firstItem="gXI-mz-BCg" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-34" id="ADV-QC-Abh"/>
+                            <constraint firstItem="gXI-mz-BCg" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Qy4-lP-IoC"/>
+                            <constraint firstItem="fDX-se-dpP" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="TVO-wy-Fx9"/>
+                            <constraint firstItem="bLl-WA-9lL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bIu-Gq-1av"/>
+                            <constraint firstAttribute="trailing" secondItem="fDX-se-dpP" secondAttribute="trailing" id="bse-eA-oso"/>
+                            <constraint firstItem="bLl-WA-9lL" firstAttribute="top" secondItem="gXI-mz-BCg" secondAttribute="bottom" constant="8" id="fyl-NY-YRE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.6305418719212"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="375" height="667"/>
+        <image name="Rounded Icon" width="1024" height="1024"/>
+    </resources>
+</document>

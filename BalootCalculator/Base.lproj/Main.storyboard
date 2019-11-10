@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4DX-BW-CQS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GeezaPro.ttc">
+            <string>GeezaPro</string>
+            <string>GeezaPro-Bold</string>
+        </array>
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="fAb-mJ-sHD">
+            <objects>
+                <viewController id="4DX-BW-CQS" customClass="ViewController" customModule="BalootCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZyT-jd-vx9"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hx7-da-xb2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RcR-Hc-V6j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="FNz-yV-r1r">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Br0-Gi-CdN">
+                                <rect key="frame" x="16" y="50" width="343" height="61"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rlg-O4-wmw">
+                                        <rect key="frame" x="0.0" y="0.0" width="101" height="61"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لهم" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03i-m6-18L">
+                                                <rect key="frame" x="39.5" y="0.0" width="22.5" height="21"/>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="17"/>
+                                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4YK-Zn-CYz">
+                                                <rect key="frame" x="0.0" y="31" width="101" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="4YK-Zn-CYz" firstAttribute="leading" secondItem="rlg-O4-wmw" secondAttribute="leading" id="SUx-xz-wQb"/>
+                                            <constraint firstAttribute="trailing" secondItem="4YK-Zn-CYz" secondAttribute="trailing" id="w1Q-Rc-KsX"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uVo-3h-29V">
+                                        <rect key="frame" x="121" y="0.0" width="101" height="61"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لنا" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3T-X0-jVc">
+                                                <rect key="frame" x="41.5" y="0.0" width="18" height="21"/>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="17"/>
+                                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gfw-Ls-ZbV">
+                                                <rect key="frame" x="0.0" y="31" width="101" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="gfw-Ls-ZbV" firstAttribute="leading" secondItem="uVo-3h-29V" secondAttribute="leading" id="5Wo-e3-ycG"/>
+                                            <constraint firstAttribute="trailing" secondItem="gfw-Ls-ZbV" secondAttribute="trailing" id="R1b-dA-6aG"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="873-3M-C14">
+                                        <rect key="frame" x="242" y="25" width="101" height="36"/>
+                                        <color key="backgroundColor" red="0.21176470589999999" green="0.20784313730000001" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="rJO-eK-98n"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="17"/>
+                                        <state key="normal" title="احسب">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="calculate:" destination="4DX-BW-CQS" eventType="touchUpInside" id="EAk-Wn-fJT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BKK-j3-D22">
+                                <rect key="frame" x="32" y="131" width="311" height="360"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="szF-mh-NkU">
+                                        <rect key="frame" x="0.0" y="31" width="311" height="329"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <sections/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لنا" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDX-FY-Zuc">
+                                        <rect key="frame" x="158" y="6" width="153" height="21"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="17"/>
+                                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لهم" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1t-dU-EmC">
+                                        <rect key="frame" x="0.0" y="6" width="154" height="21"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="17"/>
+                                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvk-T0-NJ8">
+                                        <rect key="frame" x="154" y="0.0" width="4" height="360"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="4" id="YVA-l6-OX9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="rvk-T0-NJ8" firstAttribute="leading" secondItem="U1t-dU-EmC" secondAttribute="trailing" id="0cR-ec-fNu"/>
+                                    <constraint firstItem="rvk-T0-NJ8" firstAttribute="top" secondItem="BKK-j3-D22" secondAttribute="top" id="HJ3-dJ-utm"/>
+                                    <constraint firstItem="U1t-dU-EmC" firstAttribute="top" secondItem="BKK-j3-D22" secondAttribute="top" constant="6" id="Hv0-wB-3o3"/>
+                                    <constraint firstItem="fDX-FY-Zuc" firstAttribute="top" secondItem="BKK-j3-D22" secondAttribute="top" constant="6" id="MSZ-0v-WZU"/>
+                                    <constraint firstItem="rvk-T0-NJ8" firstAttribute="centerX" secondItem="BKK-j3-D22" secondAttribute="centerX" id="QwV-su-pht"/>
+                                    <constraint firstAttribute="bottom" secondItem="szF-mh-NkU" secondAttribute="bottom" id="SU7-r0-tfq"/>
+                                    <constraint firstAttribute="bottom" secondItem="rvk-T0-NJ8" secondAttribute="bottom" id="e1B-ga-hmu"/>
+                                    <constraint firstAttribute="trailing" secondItem="szF-mh-NkU" secondAttribute="trailing" id="ig2-wm-2BP"/>
+                                    <constraint firstAttribute="trailing" secondItem="fDX-FY-Zuc" secondAttribute="trailing" id="iqr-fd-Jcu"/>
+                                    <constraint firstItem="szF-mh-NkU" firstAttribute="top" secondItem="U1t-dU-EmC" secondAttribute="bottom" constant="4" id="oNi-iq-jMg"/>
+                                    <constraint firstItem="U1t-dU-EmC" firstAttribute="leading" secondItem="BKK-j3-D22" secondAttribute="leading" id="oOZ-sM-1E7"/>
+                                    <constraint firstItem="fDX-FY-Zuc" firstAttribute="leading" secondItem="rvk-T0-NJ8" secondAttribute="trailing" id="sYH-68-1Gi"/>
+                                    <constraint firstItem="szF-mh-NkU" firstAttribute="leading" secondItem="BKK-j3-D22" secondAttribute="leading" id="w01-kV-s6g"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJu-Wq-te4">
+                                <rect key="frame" x="0.0" y="515" width="375" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iog-R4-uSR">
+                                        <rect key="frame" x="235" y="5" width="80" height="30"/>
+                                        <color key="backgroundColor" red="0.30980392159999998" green="0.46666666670000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="CAR-rs-9rh"/>
+                                            <constraint firstAttribute="width" constant="80" id="FOt-iq-XGy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="14"/>
+                                        <state key="normal" title="صكة جديدة">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="newSaka:" destination="4DX-BW-CQS" eventType="touchUpInside" id="1HT-LC-3ul"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOc-IO-lS9">
+                                        <rect key="frame" x="60" y="5" width="80" height="30"/>
+                                        <color key="backgroundColor" red="0.89019607840000003" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="I8T-2p-5o7"/>
+                                            <constraint firstAttribute="width" constant="80" id="oRS-At-jtU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="14"/>
+                                        <state key="normal" title="تراجع">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="undo:" destination="4DX-BW-CQS" eventType="touchUpInside" id="7oN-9m-UaV"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cpm-xO-tUF">
+                                        <rect key="frame" x="60" y="5" width="30" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.65490196078431373" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="M01-55-9VR"/>
+                                            <constraint firstAttribute="height" constant="30" id="qUR-hV-egh"/>
+                                        </constraints>
+                                        <state key="normal" image="Redo Arrow"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="redo:" destination="4DX-BW-CQS" eventType="touchUpInside" id="f67-BT-EPp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95C-zL-jhE">
+                                        <rect key="frame" x="337" y="5" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="EOJ-qv-Nwh"/>
+                                            <constraint firstAttribute="height" constant="30" id="mjI-a0-BRk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="10"/>
+                                        <state key="normal" title="ليلي">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="darkModeToggle:" destination="4DX-BW-CQS" eventType="touchUpInside" id="rD3-WQ-NW6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.79607843140000001" green="0.79607843140000001" blue="0.79607843140000001" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="OOc-IO-lS9" firstAttribute="leading" secondItem="JJu-Wq-te4" secondAttribute="leading" constant="60" id="8do-iv-V2n"/>
+                                    <constraint firstItem="OOc-IO-lS9" firstAttribute="centerY" secondItem="JJu-Wq-te4" secondAttribute="centerY" id="DVM-p0-CVn"/>
+                                    <constraint firstItem="Iog-R4-uSR" firstAttribute="centerY" secondItem="JJu-Wq-te4" secondAttribute="centerY" id="LH6-05-CbW"/>
+                                    <constraint firstItem="Cpm-xO-tUF" firstAttribute="leading" secondItem="OOc-IO-lS9" secondAttribute="leading" id="YUx-IC-SUS"/>
+                                    <constraint firstItem="95C-zL-jhE" firstAttribute="centerY" secondItem="JJu-Wq-te4" secondAttribute="centerY" id="aPr-zX-GGk"/>
+                                    <constraint firstAttribute="trailing" secondItem="Iog-R4-uSR" secondAttribute="trailing" constant="60" id="e7Y-a1-ZcP"/>
+                                    <constraint firstItem="Cpm-xO-tUF" firstAttribute="centerY" secondItem="OOc-IO-lS9" secondAttribute="centerY" id="eXc-eA-PS8"/>
+                                    <constraint firstAttribute="height" constant="40" id="hcZ-Ts-rdO"/>
+                                    <constraint firstAttribute="trailing" secondItem="95C-zL-jhE" secondAttribute="trailing" constant="8" id="rti-Zv-lvm"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qBd-Je-eu6">
+                                <rect key="frame" x="16" y="567" width="343" height="140"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cnn-Bf-etr">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="124" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHO-6b-pEl">
+                                                <rect key="frame" x="35" y="45" width="70.5" height="51.5"/>
+                                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="42"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="qHO-6b-pEl" firstAttribute="centerX" secondItem="cnn-Bf-etr" secondAttribute="centerX" id="CnM-TP-lrf"/>
+                                            <constraint firstAttribute="width" constant="140" id="L4T-wB-bu1"/>
+                                            <constraint firstAttribute="height" constant="140" id="YtB-tM-5Tg"/>
+                                            <constraint firstItem="qHO-6b-pEl" firstAttribute="centerY" secondItem="cnn-Bf-etr" secondAttribute="centerY" id="aBo-jY-Fsm"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="70"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.97254901959999995" green="0.34901960780000002" blue="0.34901960780000002" alpha="0.44" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ENM-Al-swb">
+                                        <rect key="frame" x="203" y="0.0" width="140" height="140"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="89" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQQ-ZQ-jWM">
+                                                <rect key="frame" x="46.5" y="45" width="47" height="51.5"/>
+                                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="42"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="jQQ-ZQ-jWM" firstAttribute="centerY" secondItem="ENM-Al-swb" secondAttribute="centerY" id="1SW-ff-rdy"/>
+                                            <constraint firstItem="jQQ-ZQ-jWM" firstAttribute="centerX" secondItem="ENM-Al-swb" secondAttribute="centerX" id="9X7-vl-y1U"/>
+                                            <constraint firstAttribute="width" constant="140" id="cvb-Sr-T3B"/>
+                                            <constraint firstAttribute="height" constant="140" id="kYw-zQ-wSq"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="70"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.27058823529999998" green="0.27058823529999998" blue="0.27058823529999998" alpha="0.44" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لهم" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hd9-7u-Vkr">
+                                <rect key="frame" x="16" y="567" width="18.5" height="17.5"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="14"/>
+                                <color key="textColor" red="0.97254901960784312" green="0.34901960784313724" blue="0.34901960784313724" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لنا" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOr-r7-Vug">
+                                <rect key="frame" x="344" y="567" width="15" height="17.5"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="14"/>
+                                <color key="textColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.27058823529411763" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvg-7E-3I1">
+                                <rect key="frame" x="167" y="463" width="42" height="42"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="BDw-lY-HTE"/>
+                                    <constraint firstAttribute="width" constant="42" id="mZu-2x-2Lg"/>
+                                </constraints>
+                                <state key="normal" image="Distributer Arrow"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="21"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeDistributer:" destination="4DX-BW-CQS" eventType="touchUpInside" id="lfd-RW-Ei8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FNz-yV-r1r" secondAttribute="trailing" id="0aC-ub-dbt"/>
+                            <constraint firstItem="AOr-r7-Vug" firstAttribute="trailing" secondItem="ENM-Al-swb" secondAttribute="trailing" id="4Jz-2l-75x"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Br0-Gi-CdN" secondAttribute="trailing" id="7Oc-pA-MtG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BKK-j3-D22" secondAttribute="trailing" constant="16" id="8cl-hf-anS"/>
+                            <constraint firstItem="BKK-j3-D22" firstAttribute="top" secondItem="Br0-Gi-CdN" secondAttribute="bottom" constant="20" id="9YN-TA-zb7"/>
+                            <constraint firstItem="qBd-Je-eu6" firstAttribute="top" secondItem="JJu-Wq-te4" secondAttribute="bottom" constant="12" id="DyH-TW-NeF"/>
+                            <constraint firstItem="yvg-7E-3I1" firstAttribute="bottom" secondItem="szF-mh-NkU" secondAttribute="bottom" constant="14" id="Gu6-L0-qTP"/>
+                            <constraint firstItem="BKK-j3-D22" firstAttribute="leading" secondItem="RcR-Hc-V6j" secondAttribute="leadingMargin" constant="16" id="La4-J3-9Qm"/>
+                            <constraint firstItem="JJu-Wq-te4" firstAttribute="top" secondItem="BKK-j3-D22" secondAttribute="bottom" constant="24" id="PXJ-5n-ezB"/>
+                            <constraint firstItem="FNz-yV-r1r" firstAttribute="leading" secondItem="RcR-Hc-V6j" secondAttribute="leading" id="S9F-gu-iST"/>
+                            <constraint firstItem="Hd9-7u-Vkr" firstAttribute="leading" secondItem="cnn-Bf-etr" secondAttribute="leading" id="Sg5-2H-Mv6"/>
+                            <constraint firstItem="FNz-yV-r1r" firstAttribute="top" secondItem="RcR-Hc-V6j" secondAttribute="top" id="TpG-J7-cXO"/>
+                            <constraint firstItem="Hx7-da-xb2" firstAttribute="top" secondItem="qBd-Je-eu6" secondAttribute="bottom" constant="-40" id="UUX-Tr-h6g"/>
+                            <constraint firstItem="AOr-r7-Vug" firstAttribute="top" secondItem="ENM-Al-swb" secondAttribute="top" id="UsS-FK-SiY"/>
+                            <constraint firstAttribute="trailing" secondItem="JJu-Wq-te4" secondAttribute="trailing" id="Xdw-1a-qqv"/>
+                            <constraint firstItem="Hd9-7u-Vkr" firstAttribute="top" secondItem="cnn-Bf-etr" secondAttribute="top" id="bSL-5N-MDn"/>
+                            <constraint firstItem="yvg-7E-3I1" firstAttribute="centerX" secondItem="szF-mh-NkU" secondAttribute="centerX" id="eUM-rB-8kt"/>
+                            <constraint firstAttribute="bottom" secondItem="FNz-yV-r1r" secondAttribute="bottom" id="fCq-Ma-arz"/>
+                            <constraint firstItem="Br0-Gi-CdN" firstAttribute="top" secondItem="ZyT-jd-vx9" secondAttribute="bottom" constant="30" id="fTj-hy-WYY"/>
+                            <constraint firstItem="Br0-Gi-CdN" firstAttribute="leading" secondItem="RcR-Hc-V6j" secondAttribute="leadingMargin" id="jEq-GQ-OIs"/>
+                            <constraint firstItem="qBd-Je-eu6" firstAttribute="leading" secondItem="RcR-Hc-V6j" secondAttribute="leadingMargin" id="kER-R7-7XY"/>
+                            <constraint firstItem="BKK-j3-D22" firstAttribute="centerX" secondItem="RcR-Hc-V6j" secondAttribute="centerX" id="l46-UU-Sst"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qBd-Je-eu6" secondAttribute="trailing" id="sid-De-vbI"/>
+                            <constraint firstItem="JJu-Wq-te4" firstAttribute="leading" secondItem="RcR-Hc-V6j" secondAttribute="leading" id="u04-li-5VQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImg" destination="FNz-yV-r1r" id="48g-fm-p8h"/>
+                        <outlet property="btnsBackgroundView" destination="JJu-Wq-te4" id="RCA-G0-Y9H"/>
+                        <outlet property="calcBtn" destination="873-3M-C14" id="XmY-y2-oCg"/>
+                        <outlet property="distributerBtn" destination="yvg-7E-3I1" id="AtI-zm-6wW"/>
+                        <outlet property="lahmCont" destination="cnn-Bf-etr" id="vPM-Ba-xNx"/>
+                        <outlet property="lahmLbl" destination="qHO-6b-pEl" id="BhX-Sl-tQb"/>
+                        <outlet property="lahmResultBG" destination="cnn-Bf-etr" id="c3P-cK-RSS"/>
+                        <outlet property="lahmResultLbl" destination="Hd9-7u-Vkr" id="F3U-rk-Mg4"/>
+                        <outlet property="lahmTF" destination="4YK-Zn-CYz" id="23Q-oD-Trf"/>
+                        <outlet property="lahmTVLbl" destination="U1t-dU-EmC" id="fCa-aH-Y0q"/>
+                        <outlet property="lahmTopLbl" destination="03i-m6-18L" id="gHc-eb-TtE"/>
+                        <outlet property="lanaCont" destination="ENM-Al-swb" id="CBE-8z-dYA"/>
+                        <outlet property="lanaLbl" destination="jQQ-ZQ-jWM" id="wbu-zZ-pH8"/>
+                        <outlet property="lanaResultBG" destination="ENM-Al-swb" id="hDS-d7-txx"/>
+                        <outlet property="lanaResultLbl" destination="AOr-r7-Vug" id="8m1-8g-4ij"/>
+                        <outlet property="lanaTF" destination="gfw-Ls-ZbV" id="aUq-Zz-us9"/>
+                        <outlet property="lanaTVLbl" destination="fDX-FY-Zuc" id="8B4-Pz-gul"/>
+                        <outlet property="lanaTopLbl" destination="p3T-X0-jVc" id="uOB-wy-YFZ"/>
+                        <outlet property="newSakaBtn" destination="Iog-R4-uSR" id="Ysm-je-ojs"/>
+                        <outlet property="redoBtn" destination="Cpm-xO-tUF" id="2kE-4m-2yy"/>
+                        <outlet property="tableView" destination="szF-mh-NkU" id="KB2-tD-oMa"/>
+                        <outlet property="undoBtn" destination="OOc-IO-lS9" id="xDP-xe-C6Z"/>
+                        <outlet property="undoWidthConstrain" destination="oRS-At-jtU" id="UJe-qw-OQO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wtU-8w-LRl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="848.79999999999995" y="-67.241379310344826"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="375" height="667"/>
+        <image name="Distributer Arrow" width="11" height="17"/>
+        <image name="Redo Arrow" width="9" height="14"/>
+    </resources>
+</document>
